@@ -63,17 +63,6 @@
 //Here a layer has been added that provides data for parks & recreation in the area
 
 
-var geojson;
-    $.getJSON('hhttps://raw.githubusercontent.com/lhintelm/lhintelmann/main/Parks.geojson', function(data) {
-      geojson = L.geoJson(data, {
-        style: style, {
-          "color": "#1a7485",
-          "weight": 1.5,
-          "opacity": 0.9,
-        },
-        onEachFeature: popUp
-      }).addTo(mymap);
-    });
 
 
 
